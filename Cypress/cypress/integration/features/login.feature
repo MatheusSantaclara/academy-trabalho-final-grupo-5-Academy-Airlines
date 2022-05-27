@@ -4,7 +4,7 @@ Desejo realizar meu acesso na aplicação
 Para conseguir utilizar os serviços do Lembra Compras.
 
     Background: Iniciei o sistema
-        Given Que iniciei o sistema Lembra Compra
+        Given que iniciei o sistema Lembra Compra
 
     Scenario: login realizado com sucesso
         When Informo email e senha

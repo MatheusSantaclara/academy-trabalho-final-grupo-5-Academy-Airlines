@@ -10,11 +10,11 @@ After({ tags: "@gestaoLista" }, () => {
 });
 
 
-Given("Que iniciei o sistema Lembra Compra para gerenciar lista", () => {
+Given("que iniciei o sistema Lembra Compra para gerenciar lista", () => {
     cy.visit("");
 });
 
-And("Informo email e senha para logar", () => {
+And("informo email e senha para logar", () => {
     gestaoListaPage.cadastroELoginGestao();
     cy.wait(1000);
 });

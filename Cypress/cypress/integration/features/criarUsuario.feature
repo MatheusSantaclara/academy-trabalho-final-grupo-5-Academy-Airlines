@@ -4,8 +4,8 @@ Desejo registrar no sistema
 Para ter acesso as funcionalidades de lista de compras
 
     Background: Iniciei o sistema
-        Given iniciei o sistema Lembra Compra para criar usuario
-        And Cliquei em registre-se
+        Given que iniciei o sistema Lembra Compra para criar usuario
+        And cliquei em registre-se
     
     Scenario: Cadastro realizado com sucesso
         When Informo meus dados para cadastro

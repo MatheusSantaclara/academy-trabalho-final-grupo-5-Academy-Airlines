@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
 import { historicoPage } from "../pages/historico.page.po";
 
-Given("Que iniciei o sistema Lembra Compra para visualizar historico", () => {
+Given("que iniciei o sistema Lembra Compra para visualizar historico", () => {
     cy.visit("");
 });
 
-And("Informo email e senha para logar", () => {
+And("informo email e senha para logar", () => {
     historicoPage.cadastroHistorico();
     cy.wait(1000);
 });

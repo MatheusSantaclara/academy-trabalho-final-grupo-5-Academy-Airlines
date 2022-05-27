@@ -5,8 +5,8 @@ Desejo gerenciar uma lista de compras
 Para registrar os produtos que desejo comprar.
 
     Background: Iniciei o sistema
-        Given Que iniciei o sistema Lembra Compra para gerenciar lista
-        And Informo email e senha para logar
+        Given que iniciei o sistema Lembra Compra para gerenciar lista
+        And informo email e senha para logar
 
     Scenario: criar lista de compras com sucesso
         When nomeio a lista

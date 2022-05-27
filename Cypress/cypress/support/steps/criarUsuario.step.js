@@ -1,11 +1,11 @@
 /// <reference types="cypress" />
 import { criarUsuarioPage } from "../pages/criarUsuario.page.po";
 
-Given("iniciei o sistema Lembra Compra para criar usuario", () => {
+Given("que iniciei o sistema Lembra Compra para criar usuario", () => {
     cy.visit("");
 });
 
-And("Cliquei em registre-se", () => {
+And("cliquei em registre-se", () => {
     criarUsuarioPage.clickRegistro();
 });
 

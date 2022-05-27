@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import { loginPage } from "../pages/login.page.po";
 
-Given("Que iniciei o sistema Lembra Compra", () => {
+Given("que iniciei o sistema Lembra Compra", () => {
     cy.visit("");
 });
 

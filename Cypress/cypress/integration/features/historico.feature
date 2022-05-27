@@ -4,8 +4,8 @@ Desejo consultar minhas últimas listas de compra
 Para visualizar minhas últimas compras.
 
     Background: Iniciei o sistema
-        Given Que iniciei o sistema Lembra Compra para visualizar historico
-        And Informo email e senha para logar
+        Given que iniciei o sistema Lembra Compra para visualizar historico
+        And informo email e senha para logar
         
     Scenario: visualizar histórico de compras com sucesso
         When acesso histórico de lista

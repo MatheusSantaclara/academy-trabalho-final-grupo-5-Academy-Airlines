@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 import { atualizarPage } from "../pages/atualizar.page.po";
 
-Given("Que iniciei o sistema Lembra Compra para atualizar dados", () => {
+Given("que iniciei o sistema Lembra Compra para atualizar dados", () => {
     cy.visit("");
     cy.contains("button", "Entrar").should("be.visible");
 
