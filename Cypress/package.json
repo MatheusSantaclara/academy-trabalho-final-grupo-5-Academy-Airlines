@@ -1,0 +1,19 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "projeto final",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open --config redirectionLimit=30",
+    "run": "npx cypress run --config redirectionLimit=30"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  },
+  "author": "Juliana Cristina",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.6.1",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}

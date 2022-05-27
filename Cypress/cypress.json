@@ -1,0 +1,9 @@
+{
+    "baseUrl": "https://academy-lembra-compras.herokuapp.com/login",
+    "testFiles": "**/*.feature",
+    "env": {
+        "TAGS": "not @ignore"
+    },
+
+    "video": false
+}
