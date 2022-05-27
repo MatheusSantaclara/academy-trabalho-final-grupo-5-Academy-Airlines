@@ -1,5 +1,3 @@
-import { should } from "chai";
-
 class AtualizarPage {
 
     inputName = ".sc-kDDrLX.fENjNr";
@@ -32,7 +30,6 @@ class AtualizarPage {
         cy.get(this.inputEmail).eq(1).type(emailAleatorio);
         cy.get(this.inputSenha).eq(0).type(senha);
         cy.get(this.inputConfirmaSenha).eq(1).type(confirmaSenha);
-        //cy.contains("button", "Registrar", should("be.visible")).click( { force: true });
         cy.get(this.registre).click();
         cy.wait(1000);
 

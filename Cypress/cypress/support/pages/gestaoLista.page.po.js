@@ -29,7 +29,7 @@ class GestaoListaPage {
         cy.get(this.inputEmail).eq(1).type(emailAleatorio, {force: true});
         cy.get(this.inputSenha).eq(0).type(1234, {force: true});
         cy.get(this.inputConfirmaSenha).eq(1).type(1234, {force: true});
-        cy.contains("button", "Registrar", should("be.visible")).click({force: true});
+        cy.contains("button", "Registrar").click({force: true});
 
         cy.wait(2000);
 
