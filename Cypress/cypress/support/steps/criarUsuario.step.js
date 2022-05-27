@@ -65,7 +65,7 @@ Then("visualizo mensagem que {string}", (mensagemDuplicidade) => {
     cy.contains(mensagemDuplicidade).should("be.visible");
 });
 
-And("deve ser exibida a mensagem de {string}", () => {     
+And("visualizo a mensagem de {string}", () => {     
 cy.intercept("https://academy-lembra-compras.herokuapp.com/register",
 {
 response: "User already exists."

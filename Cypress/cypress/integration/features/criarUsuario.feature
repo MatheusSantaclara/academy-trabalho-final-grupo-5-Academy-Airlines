@@ -26,7 +26,7 @@ Para ter acesso as funcionalidades de lista de compras
     Scenario: Cadastro com email já cadastrado
         When Informo nome e senha e informo o email já existente
         Then visualizo mensagem que "Este e-mail já é utilizado por outro usuário."
-        And deve ser exibida a mensagem de "User already exists"
+        And visualizo a mensagem de "User already exists"
     
     Scenario: Cadastro sem preencher campo senha
         When Informo nome e email e não informo o senha

@@ -14,7 +14,7 @@ Given("que iniciei o sistema Lembra Compra para gerenciar lista", () => {
     cy.visit("");
 });
 
-And("informo email e senha para logar", () => {
+And("informei email e senha para logar", () => {
     gestaoListaPage.cadastroELoginGestao();
     cy.wait(1000);
 });
@@ -33,7 +33,7 @@ Then("visualizo mensagem de {string}", (mensagemSucesso) => {
     cy.contains(mensagemSucesso).should("be.visible");
 });
 
-And("consigo ter apenas 1 lista ativa", () => {
+And("tenho apenas 1 lista ativa", () => {
     cy.wait(1000);
     cy.visit("https://academy-lembra-compras.herokuapp.com/lista");
     cy.contains("Jantar Aniversário").should("be.visible");
@@ -45,7 +45,7 @@ When("não informo um nome para a lista", () => {
 
 });
 
-Then("a mensagem de sucesso é exibida {string}", (mensagemDeSucesso) => {
+Then("visualizo mensagem de sucesso {string}", (mensagemDeSucesso) => {
     cy.contains(mensagemDeSucesso).should("be.visible");
 
 });
@@ -76,7 +76,7 @@ And("informo um item já adicionado", () => {
     gestaoListaPage.clicaSalvar();
 });
 
-Then("a quantidade de itens devem ser acrescentada", () => {
+Then("visualizo que a quantidade de itens é adicionada", () => {
     cy.wait(1000);
     cy.visit("https://academy-lembra-compras.herokuapp.com/lista");
     
@@ -84,7 +84,7 @@ Then("a quantidade de itens devem ser acrescentada", () => {
 
 });
 
-And("não pode ultrapassar 1000 unidades e mensagem deve ser exibida {string}", (mensagem1000) => {
+And("não ultrapassa 1000 unidades e visualizo mensagem {string}", (mensagem1000) => {
     cy.wait(1000);
     gestaoListaPage.adicionarItens("Arroz", 999);
 
@@ -107,7 +107,7 @@ And("informo um item novo", () => {
 
 });
 
-Then("a quantidade os itens devem ser adicionados", () => {
+Then("visualizo que a quantidade de itens é acrescentado", () => {
     cy.contains("Feijão").should("be.visible");
 
 });
@@ -117,13 +117,13 @@ And("informo um item já adicionado anteriormente", () => {
     gestaoListaPage.adicionarItens("Arroz", 15);
 });
 
-Then("a quantidade de itens atualizados devem ser acrescentada", () => {
+Then("visualizo que a quantidade atualizada de itens é acrescentado", () => {
     cy.wait(1000);
     cy.contains(28).should("be.visible");
 
 });
 
-And("não pode ultrapassar 1000 unidades {string}", (mensagemProdutos) => {
+And("não ultrapassa 1000 unidades {string}", (mensagemProdutos) => {
     cy.wait(1000);
     gestaoListaPage.adicionarItens("Arroz", 979);
     
@@ -136,7 +136,7 @@ And("concluo um item", () => {
     gestaoListaPage.concluirItem()
 });
 
-Then("item é marcado como concluído na lista", () => {
+Then("visualizo que o item é marcado como concluído na lista", () => {
     gestaoListaPage.itemFinalizado();
 
 });
@@ -151,12 +151,12 @@ When("finalizo uma lista ativa", () => {
     gestaoListaPage.finalizarLista();
 });
 
-Then("a mensagem de lista finalizada é exibida {string}", (mensagemConcluida) => {
+Then("visualizo a mensagem de lista finalizada {string}", (mensagemConcluida) => {
     cy.contains(mensagemConcluida).should("be.visible");
 
 });
 
-And("status não pode ser alterado", () => {
+And("seu status não pode ser alterado", () => {
     gestaoListaPage.acessarHistorico();
     cy.contains("Editar").should("not.exist");
 

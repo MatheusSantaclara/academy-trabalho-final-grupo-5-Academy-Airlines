@@ -5,14 +5,14 @@ Para visualizar minhas últimas compras.
 
     Background: Iniciei o sistema
         Given que iniciei o sistema Lembra Compra para visualizar historico
-        And informo email e senha para logar
+        And informei email e senha para logar
         
     Scenario: visualizar histórico de compras com sucesso
         When acesso histórico de lista
-        Then consigo visualizar minha lista de compra
-        And somente visualizo as 10 ultimas listas
+        Then visualizo minha lista de compra
+        And somente as 10 ultimas listas
     
     Scenario: visualizar lista de compras com sucesso
         When acesso meu histórico de lista
         And consulto uma lista
-        Then consigo visualizar nome e itens
+        Then visualizo nome e itens

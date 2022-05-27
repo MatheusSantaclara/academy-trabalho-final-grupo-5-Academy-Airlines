@@ -7,7 +7,7 @@ Given("que iniciei o sistema Lembra Compra para atualizar dados", () => {
 
 });
 
-And("Informo email e senha para logar", () => {
+And("informei email e senha para logar", () => {
     cy.visit("https://academy-lembra-compras.herokuapp.com/register");
     atualizarPage.cadastroELogin();
 });
@@ -18,7 +18,7 @@ When("altero nome e email", () => {
 
 });
 
-Then("aparece a mensagem de {string}", (mensagemAtualizada) => {
+Then("visualizo a mensagem de {string}", (mensagemAtualizada) => {
     cy.contains(mensagemAtualizada).should("be.visible");
 
     atualizarPage.logout();
@@ -41,7 +41,7 @@ When("altero nome e email já existente", () => {
 
 });
 
-Then("aparece a mensagem de erro {string}", () => {
+Then("visualizo a mensagem de erro {string}", () => {
     cy.intercept("https://academy-lembra-compras.herokuapp.com/register",
 {
 response: "'error':'E-mail already in use.'"
@@ -56,7 +56,7 @@ When("altero nome com mais de 100 caracteres", () => {
 
 });
 
-Then("aparece a mensagem de erro no campo de nome {string}", (mensagemErroNome) => {
+Then("visualizo a mensagem de erro no campo de nome {string}", (mensagemErroNome) => {
     cy.contains(mensagemErroNome).should("be.visible");
 
     atualizarPage.logout();
@@ -68,7 +68,7 @@ When("altero email com mais de 60 caracteres", () => {
     cy.wait(1000);
 });
 
-Then("aparece a mensagem de erro no campo de email {string}", (mensagemErroEmail) => {
+Then("visualizo a mensagem de erro no campo de email {string}", (mensagemErroEmail) => {
     cy.contains(mensagemErroEmail).should("be.visible");
 
     atualizarPage.logout();

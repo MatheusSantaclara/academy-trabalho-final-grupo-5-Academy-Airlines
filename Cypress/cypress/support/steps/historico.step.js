@@ -5,7 +5,7 @@ Given("que iniciei o sistema Lembra Compra para visualizar historico", () => {
     cy.visit("");
 });
 
-And("informo email e senha para logar", () => {
+And("informei email e senha para logar", () => {
     historicoPage.cadastroHistorico();
     cy.wait(1000);
 });
@@ -26,11 +26,11 @@ When("acesso histórico de lista", () => {
     historicoPage.acessarHistorico();
 });
 
-Then("consigo visualizar minha lista de compra", () => {
+Then("visualizo minha lista de compra", () => {
     cy.contains("Lista k").should("be.visible");
 });
 
-And("somente visualizo as 10 ultimas listas", () => {
+And("somente as 10 ultimas listas", () => {
     cy.contains("Lista a").should("not.exist");
 
     historicoPage.logout();
@@ -45,7 +45,7 @@ And("consulto uma lista", () => {
     historicoPage.clicarListaEmHistorico();
 });
 
-Then("consigo visualizar nome e itens", () => {
+Then("visualizo nome e itens", () => {
     cy.contains("Arroz").should("be.visible");
     cy.contains("Lista a").should("be.visible");
 
