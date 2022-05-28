@@ -1,4 +1,4 @@
-class GestaoListaPage {
+class GestaoPage {
 
     inputName = ".sc-kDDrLX.fENjNr";
     inputEmail = ".sc-kDDrLX.fENjNr";
@@ -11,7 +11,7 @@ class GestaoListaPage {
     menu = ".sc-bjUoiL.bgBaRw";
     perfil = ".sc-hHLeRK.QpzJB";
     sairLogout = "[href='/logout']";
-    linkLista = "[href='/lista']"
+    linkLista = "[href='/lista']";
 
     nomeLista = ".sc-hAZoDl .sc-ksZaOG";
     nomeItem = ".sc-ksZaOG.iOgYyu";
@@ -21,14 +21,18 @@ class GestaoListaPage {
 
     itemConcluido = ".sc-gXmSlM.Xhkyc";
 
-    cadastroELoginGestao () {
+    cadGestao() {
         var currentTimeInMilliseconds = Date.now();
+        var nameFixoCriar = "Bon Jovi";
         var emailAleatorio = currentTimeInMilliseconds + "@gmail.com";
+        var senha = 1234
+        var confirmaSenha = 1234
+
         cy.contains("Registre-se").click({force: true});
-        cy.get(this.inputName).eq(0).type("Bon Jovi", { force: true });
+        cy.get(this.inputName).eq(0).type(nameFixoCriar, { force: true });
         cy.get(this.inputEmail).eq(1).type(emailAleatorio, {force: true});
-        cy.get(this.inputSenha).eq(0).type(1234, {force: true});
-        cy.get(this.inputConfirmaSenha).eq(1).type(1234, {force: true});
+        cy.get(this.inputSenha).eq(0).type(senha, {force: true});
+        cy.get(this.inputConfirmaSenha).eq(1).type(confirmaSenha, {force: true});
         cy.contains("button", "Registrar").click({force: true});
 
         cy.wait(2000);
@@ -90,4 +94,4 @@ class GestaoListaPage {
 
 }
 
-export var gestaoListaPage = new GestaoListaPage();
+export var gestaoPage = new GestaoPage();

@@ -6,7 +6,7 @@ Given("que iniciei o sistema Lembra Compra", () => {
 });
 
 When("Informo email e senha", () => {
-    loginPage.cadastroELogin();
+    loginPage.cadLogin();
 
 });
 

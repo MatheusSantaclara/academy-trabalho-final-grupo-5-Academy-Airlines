@@ -30,8 +30,9 @@ class AtualizarPage {
         cy.get(this.inputEmail).eq(1).type(emailAleatorio);
         cy.get(this.inputSenha).eq(0).type(senha);
         cy.get(this.inputConfirmaSenha).eq(1).type(confirmaSenha);
-        cy.get(this.registre).click();
-        cy.wait(1000);
+        //cy.get(this.registre).click();
+        cy.contains("Registrar").click();
+        cy.wait(2000);
 
         cy.get(this.loginEmail).eq(0).type(emailAleatorio);
         cy.get(this.loginSenha).eq(1).type(senha);
@@ -85,18 +86,21 @@ class AtualizarPage {
         var nameFixoCriar = "Nick Chad Kroeger";
         var emailAleatorio = currentTimeInMilliseconds + "@gmail.com";
 
-        cy.get(this.campoNome).eq(1).clear();
+        cy.get(this.campoNome).eq(1).clear({force: true});
         cy.get(this.campoNome).eq(1).type(nameFixoCriar);
-        cy.get(this.campoEmail).eq(2).clear();
+        cy.get(this.campoEmail).eq(2).clear({force: true});
         cy.get(this.campoEmail).eq(2).type(emailAleatorio);
+        cy.wait(1000);
         cy.contains("button", "Confirmar alterações").click({force: true});
         cy.get(".sc-jdAMXn.iMjKmA").click();
     }
 
     alteraNomeDuplicado(nameFixoCriar, emailAleatorio) {
         cy.get(this.campoNome).eq(1).clear({force: true});
+        cy.wait(1000);
         cy.get(this.campoNome).eq(1).type(nameFixoCriar);
         cy.get(this.campoEmail).eq(2).clear({force: true});
+        cy.wait(1000);
         cy.get(this.campoEmail).eq(2).type(emailAleatorio);
         cy.contains("button", "Confirmar alterações").click({force: true});
         cy.get(".sc-jdAMXn.iMjKmA").click();
@@ -111,8 +115,10 @@ class AtualizarPage {
 
     alteraEmailErro(nameFixoCriar, emailAleatorio) {
         cy.get(this.campoEmail).eq(2).clear({force: true});
+        cy.wait(1000);
         cy.get(this.campoEmail).eq(2).type(emailAleatorio);
         cy.get(this.campoNome).eq(1).clear({force: true});
+        cy.wait(1000);
         cy.get(this.campoNome).eq(1).type(nameFixoCriar);
     }
 

@@ -12,7 +12,7 @@ class LoginPage {
     perfil = ".sc-hHLeRK.QpzJB";
     sairLogout = "[href='/logout']";
 
-    cadastroELogin () {
+    cadLogin () {
         var currentTimeInMilliseconds = Date.now();
         var nameFixoCriar = "Miley Cyrus";
         var emailAleatorio = currentTimeInMilliseconds + "@gmail.com";

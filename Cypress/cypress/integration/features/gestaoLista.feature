@@ -6,12 +6,12 @@ Para registrar os produtos que desejo comprar.
 
     Background: Iniciei o sistema
         Given que iniciei o sistema Lembra Compra para gerenciar lista
-        And informei email e senha para logar
+        And entrei com meus dados
 
     Scenario: criar lista de compras com sucesso
         When nomeio a lista
         And informo nome e quantidade dos itens
-        Then visualizo mensagem de "Lista de compras criada com sucesso!"
+        Then visualizo mensagem de sucesso "Lista de compras criada com sucesso!"
         And tenho apenas 1 lista ativa
 
     Scenario: criar lista de compras sem descrição
@@ -19,10 +19,15 @@ Para registrar os produtos que desejo comprar.
         And informo nome e quantidade dos itens
         Then visualizo mensagem de sucesso "Lista de compras criada com sucesso!"
 
+    Scenario: criar lista de compras sem descrição
+        When não informo um nome para a lista
+        And não informo nome e nem quantidade dos itens
+        Then visualizo mensagem de falha ao criar lista "Adicione pelo menos um item na sua lista de compras"
+
     Scenario: criar lista de compras com quantidade menor que 1 de um determinado item
         When nomeio a lista
         And informo quantidade menor que 1 de um determinado item
-        Then visualizo a mensagem de erro "Informe pelo menos 1 unidade"
+        Then visualizo a mensagem para informar 1 item pelo menos "Informe pelo menos 1 unidade"
 
     Scenario: criar lista de compras com quantidade maior que 1000 de um determinado item
         When nomeio a lista
@@ -55,3 +60,8 @@ Para registrar os produtos que desejo comprar.
         When finalizo uma lista ativa
         Then visualizo a mensagem de lista finalizada "Lista concluída com sucesso!"
         And seu status não pode ser alterado
+
+    Scenario: somente acesso minha lista se estiver logado no sistema
+        When acesso a página de lista sem ter logado
+        Then retorno a página para efetuar login
+        And faço login para criar minha lista

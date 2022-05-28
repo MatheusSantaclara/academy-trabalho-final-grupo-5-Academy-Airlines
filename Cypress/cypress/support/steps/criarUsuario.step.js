@@ -24,6 +24,14 @@ When("Informo email e senha e não informo o nome", () => {
     criarUsuarioPage.botaoRegistrar();
 });
 
+When("Informo email e senha e informo nome Ana", () => {
+    criarUsuarioPage.cadNomeVazio("Ana");
+    criarUsuarioPage.cadEmail();
+    criarUsuarioPage.cadSenha();
+    criarUsuarioPage.cadConfirmaSenha();
+    criarUsuarioPage.botaoRegistrar();
+});
+
 Then("visualizo mensagem para preencher campo de nome {string}", (mensagemNome) => {
     cy.contains(mensagemNome).should("be.visible");
 });
@@ -39,9 +47,25 @@ Then("visualizo mensagem para preencher campo de email {string}", (mensagemEmail
     cy.contains(mensagemEmail).should("be.visible");
 });
 
-When("Informo nome e senha e informo o email com formato inválido", () => {
+When("Informo nome e senha e informo o email com formato inválido - sem @", () => {
     criarUsuarioPage.cadNome();
     criarUsuarioPage.cadEmailVazio("avrillavigne.com.br");
+    criarUsuarioPage.cadSenha();
+    criarUsuarioPage.cadConfirmaSenha();
+    criarUsuarioPage.botaoRegistrar();
+});
+
+When("Informo nome e senha e informo o email com formato inválido - sem .com", () => {
+    criarUsuarioPage.cadNome();
+    criarUsuarioPage.cadEmailVazio("avrillavigne@teste");
+    criarUsuarioPage.cadSenha();
+    criarUsuarioPage.cadConfirmaSenha();
+    criarUsuarioPage.botaoRegistrar();
+});
+
+When("Informo nome e senha e informo o email com formato inválido - sem .", () => {
+    criarUsuarioPage.cadNome();
+    criarUsuarioPage.cadEmailVazio("avrillavigne@testecom");
     criarUsuarioPage.cadSenha();
     criarUsuarioPage.cadConfirmaSenha();
     criarUsuarioPage.botaoRegistrar();
@@ -61,11 +85,11 @@ When("Informo nome e senha e informo o email já existente", () => {
     criarUsuarioPage.cadDuplicado("Avril Lavigne", emailDuplicado, 1234, 1234);
 });
 
-Then("visualizo mensagem que {string}", (mensagemDuplicidade) => {
+Then("visualizo mensagem de duplicidade {string}", (mensagemDuplicidade) => {
     cy.contains(mensagemDuplicidade).should("be.visible");
 });
 
-And("visualizo a mensagem de {string}", () => {     
+And("visualizo a mensagem no response body {string}", () => {     
 cy.intercept("https://academy-lembra-compras.herokuapp.com/register",
 {
 response: "User already exists."
@@ -94,6 +118,9 @@ When("Informo nome, email e senha e não informo o confirmação de senha", () =
 When("Informo nome com mais de 100 caracteres", () => {
     criarUsuarioPage.cadNomeVazio("Billie Joe Armstrongggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg");
     criarUsuarioPage.cadEmail();
+    criarUsuarioPage.cadSenha();
+    criarUsuarioPage.cadConfirmaSenha();
+    criarUsuarioPage.botaoRegistrar();
 });
 
 Then("visualizo mensagem para corrigir campo de nome {string}", (mensagemNomeIncorreto) => {
@@ -104,6 +131,16 @@ When("Informo email com mais de 100 caracteres", () => {
     criarUsuarioPage.cadNome();
     criarUsuarioPage.cadEmailVazio("billiejoearmstrongggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg@gmail.com");
     criarUsuarioPage.cadSenha();
+    criarUsuarioPage.cadConfirmaSenha();
+    criarUsuarioPage.botaoRegistrar();
+});
+
+When("Informo email com mais de 60 caracteres", () => {
+    criarUsuarioPage.cadNome();
+    criarUsuarioPage.cadEmailVazio("billiejoearmstronggggggggggggggggggggggggggggggggggggggggggggggg@gmail.com");
+    criarUsuarioPage.cadSenha();
+    criarUsuarioPage.cadConfirmaSenha();
+    criarUsuarioPage.botaoRegistrar();
 });
 
 Then("visualizo mensagem para corrigir tamanho de email {string}", (mensagemEmailIncorreto) => {

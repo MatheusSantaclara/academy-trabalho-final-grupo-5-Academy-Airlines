@@ -5,7 +5,7 @@ Given("que iniciei o sistema Lembra Compra para visualizar historico", () => {
     cy.visit("");
 });
 
-And("informei email e senha para logar", () => {
+And("informei dados para logar", () => {
     historicoPage.cadastroHistorico();
     cy.wait(1000);
 });

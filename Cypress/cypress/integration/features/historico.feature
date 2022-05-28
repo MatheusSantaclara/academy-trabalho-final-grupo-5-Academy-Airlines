@@ -5,7 +5,7 @@ Para visualizar minhas últimas compras.
 
     Background: Iniciei o sistema
         Given que iniciei o sistema Lembra Compra para visualizar historico
-        And informei email e senha para logar
+        And informei dados para logar
         
     Scenario: visualizar histórico de compras com sucesso
         When acesso histórico de lista
