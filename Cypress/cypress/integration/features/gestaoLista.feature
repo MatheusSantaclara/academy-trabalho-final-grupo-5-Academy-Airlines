@@ -4,7 +4,7 @@ Como um usuário com conta no sistema
 Desejo gerenciar uma lista de compras
 Para registrar os produtos que desejo comprar.
 
-    Background: Iniciei o sistema
+    Background: Iniciei o sistema Lembra Compra
         Given que iniciei o sistema Lembra Compra para gerenciar lista
         And entrei com meus dados
 
