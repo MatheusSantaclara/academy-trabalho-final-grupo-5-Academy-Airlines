@@ -25,7 +25,7 @@
 
  📋 O Sistema ***Lembra Compras*** é uma ferramenta criada para ajudar os usuarios a não se esquecerem dos itens que precisa comprar, seja no mercado, no shopping, no trabalho, onde ele quiser. 
  
- De forma pratica e simplificada, o sistema despensa a necessidade de usar papel e caneta, contribuindo também para a melhoria do meio ambiente.
+ De forma pratica e simplificada, o sistema dispensa a necessidade de usar papel e caneta, contribuindo também para a melhoria do meio ambiente.
  
  No Sistema ***Lembra Compras***, é possivel criar listas de compras, rasurar itens comprados, e após finaliza-la, a mesma fica salva para consultar o histórico das listas que foram finalizadas anteriormente.
  
@@ -42,9 +42,8 @@ A documentação da api pode ser encontrada no swagger neste [link](https://list
 - [x] Cadastrar um usuário são: ``nome``, ``e-mail`` e ``senha``.
 - [x] O Usuário faz ``login`` no sistema e se autentica.
 - [x] Atualizar as informações básicas para manter meus dados atualizados no sistema.
-- [x] Criar lista de compras.
-- [x] Gerenciar lista de compras:
-    - [x] Acrescentando ou removendo itens a lista.
+- [x] Criar e gerenciar lista de compras.
+- [x] Consultar itens lista salvas.
 
 ---
 
@@ -55,7 +54,7 @@ Para executar os testes realizados neste projeto, é preciso fazer o download do
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Node.js](https://nodejs.org/en/), [Cypress](https://github.com/saymowan/cypress-api-testing) e [Karate DSL](https://github.com/karatelabs/karate).
+[Node.js](https://nodejs.org/en/), [Java JDK](https://www.oracle.com/java/technologies/downloads/), [Cypress](https://github.com/saymowan/cypress-api-testing) e [Karate DSL](https://github.com/karatelabs/karate).
 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
