@@ -70,7 +70,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 #### [](https://github.com/Joaopdev/Inventario-Raro)**Server**  ([Cypress](https://github.com/saymowan/cypress-api-testing)  +  [KarateSQL](https://github.com/karatelabs/karate))
 
 - **[Node.js](https://nodejs.org/en/)**
-
+- **[Cucumber](https://cucumber.io/)**
+- **[Gherkin](https://cucumber.io/docs/gherkin/)**
+- **[Java JDK](https://www.oracle.com/java/technologies/downloads/)**
+- **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**
 ---
 
 ## 🦸 Autores
@@ -79,7 +82,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 -   **[Juliana Cristina](https://github.com/JuhMuntanelli)**
 -   **[Marcos A. Lira](https://github.com/Marcoslira91)**
 -   **[Matheus Godoi]()**
-
  
 
 ---
