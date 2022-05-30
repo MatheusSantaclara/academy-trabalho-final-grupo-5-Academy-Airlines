@@ -78,6 +78,18 @@ $ npm install cypress
 $ npx cypress open
 
 ```
+
+#### 🎲 Rodando o Karate Framework.
+
+```bash
+
+# Clone este repositório
+$ git clone https://github.com/JuhMuntanelli/academy-trabalho-final-grupo-5-Academy-Airlines.git
+
+# 
+$ 
+
+```
 	
 ---
 
