@@ -16,7 +16,7 @@ Para manter meus dados atualizados no sistema.
         When altero nome e email já existente
         Then visualizo a mensagem de erro "Este e-mail já é utilizado por outro usuário."
 
-    Scenario: atualizo email para um já existente
+    Scenario: atualizo email para um já existente no Response body
         When altero nome e email já existente
         Then visualizo a mensagem de erro no response body "'error':'E-mail already in use.'"
 
@@ -28,15 +28,15 @@ Para manter meus dados atualizados no sistema.
         When altero nome com menos de 3 caracteres
         Then visualizo a mensagem para corrigir campo de nome "Informe seu nome completo"
 
-    Scenario: atualizo email com formato inválido
+    Scenario: atualizo email com formato inválido sem @
         When altero email com formato inválido - sem @
         Then visualizo a mensagem de formato inválido no campo de email "Formato de e-mail inválido."
 
-    Scenario: atualizo email com formato inválido
+    Scenario: atualizo email com formato inválido sem .com
         When altero email com formato inválido - sem .com
         Then visualizo a mensagem de formato inválido no campo de email "Formato de e-mail inválido."
     
-    Scenario: atualizo email com formato inválido
+    Scenario: atualizo email com formato inválido sem .
         When altero email com formato inválido - sem .
         Then visualizo a mensagem de formato inválido no campo de email "Formato de e-mail inválido."
 
