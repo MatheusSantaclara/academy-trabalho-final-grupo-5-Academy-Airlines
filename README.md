@@ -55,7 +55,7 @@ Para executar os testes realizados neste projeto, é preciso fazer o download do
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Node.js](https://nodejs.org/en/), [Cypress](https://github.com/saymowan/cypress-api-testing) e [KarateSQL](https://github.com/karatelabs/karate).
+[Node.js](https://nodejs.org/en/), [Cypress](https://github.com/saymowan/cypress-api-testing) e [Karate DSL](https://github.com/karatelabs/karate).
 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
@@ -74,7 +74,7 @@ $ npm init
 # Utilize o comando ``npm install cypress`` para instalar o pacote do Cypress
 $ npm install cypress
 
-# Para executar o ```Cypresse``` execute o comando abaixo em seu termina
+# Para executar o ```Cypress``` execute o comando abaixo em seu termina
 $ npx cypress open
 
 ```
@@ -97,7 +97,7 @@ $ java -jar karate.jar *.feature
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### [](https://github.com/Joaopdev/Inventario-Raro)**Server**  ([Cypress](https://github.com/saymowan/cypress-api-testing)  +  [KarateSQL](https://github.com/karatelabs/karate))
+#### [](https://github.com/Joaopdev/Inventario-Raro)**Server**  ([Cypress](https://github.com/saymowan/cypress-api-testing)  +  [KarateDSL](https://github.com/karatelabs/karate))
 
 - **[Node.js](https://nodejs.org/en/)**
 - **[Cucumber](https://cucumber.io/)**
