@@ -6,7 +6,7 @@
 
   </p>
 <h1 align="center">
-    <img style="width:290px;" alt="NextLevelWeek" title="#NextLevelWeek" src="">
+    <img style="width:290px;" alt="NextLevelWeek" title="#NextLevelWeek" src="WhatsApp Image 2022-05-30 at 20.13.58.jpeg">
 </h1>
 
 <h4 align="center"> 
