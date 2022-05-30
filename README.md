@@ -54,7 +54,7 @@ Para executar os testes realizados neste projeto, é preciso fazer o download do
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Node.js](https://nodejs.org/en/), [Java JDK](https://www.oracle.com/java/technologies/downloads/), [Cypress](https://github.com/saymowan/cypress-api-testing) e [Karate DSL](https://github.com/karatelabs/karate).
+[Java JDK](https://www.oracle.com/java/technologies/downloads/), [Node.js](https://nodejs.org/en/), [Cypress](https://github.com/saymowan/cypress-api-testing) e [Karate DSL](https://github.com/karatelabs/karate).
 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
