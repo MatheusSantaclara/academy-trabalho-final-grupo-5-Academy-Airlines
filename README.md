@@ -86,8 +86,8 @@ $ npx cypress open
 # Clone este repositório
 $ git clone https://github.com/JuhMuntanelli/academy-trabalho-final-grupo-5-Academy-Airlines.git
 
-# 
-$ 
+# No VS Code, execute o comando abaixo através do terminal, para inicia a configuração do projeto
+$ java -jar karate.jar *.feature
 
 ```
 	
@@ -108,7 +108,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸 Autores
 
--   **[David Ortiz]()**
+-   **[David Ortiz](https://github.com/david-ortizD)**
 -   **[Juliana Cristina](https://github.com/JuhMuntanelli)**
 -   **[Marcos A. Lira](https://github.com/Marcoslira91)**
 -   **[Matheus Godoi]()**
