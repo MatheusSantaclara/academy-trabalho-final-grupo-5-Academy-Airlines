@@ -66,7 +66,7 @@ Para verificar os testes funcionais e exploratorios, é necessario acessar o [Tr
 ```bash
 
 # Clone este repositório
-$ git clone git@github.com:Joaopdev/Inventario-Raro.git
+$ git clone 
 
 # Vá para a pasta server
 $ cd server
