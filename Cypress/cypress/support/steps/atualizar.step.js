@@ -63,7 +63,7 @@ response: "'error':'E-mail already in use.'"
 
 When("altero nome com mais de 100 caracteres", () => {
     atualizarPage.acessoPerfil();
-    atualizarPage.alteraNomeErro("Chad Kroegerggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg","teste@teste.com");
+    atualizarPage.alteraNomeErro("Chad Kroegergggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg","teste@teste.com");
 
 });
 
@@ -88,14 +88,14 @@ Then("visualizo a mensagem para corrigir campo de nome {string}", (mensagemNomeC
 When("altero email com mais de 60 caracteres", () => {
     atualizarPage.acessoPerfil();
     cy.wait(1000);
-    atualizarPage.alteraEmailErro("Chad Kroeger","t@gmail.commmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm");
+    atualizarPage.alteraEmailErro("Chad Kroeger","t@gmail.commmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm");
     
 });
 
 When("altero email com mais de 100 caracteres", () => {
     atualizarPage.acessoPerfil();
     cy.wait(1000);
-    atualizarPage.alteraEmailErro("Chad Kroeger","t@t.commmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm");
+    atualizarPage.alteraEmailErro("Chad Kroeger","t@t.commmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm");
     
 });
 
