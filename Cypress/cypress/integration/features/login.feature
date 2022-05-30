@@ -3,7 +3,7 @@ Como um usuário com conta no sistema
 Desejo realizar meu acesso na aplicação
 Para conseguir utilizar os serviços do Lembra Compras.
 
-    Background: Iniciei o sistema
+    Background: Iniciei o sistema de Lembra Compras
         Given que iniciei o sistema Lembra Compra
 
     Scenario: login realizado com sucesso
