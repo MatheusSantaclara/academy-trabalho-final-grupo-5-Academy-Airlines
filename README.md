@@ -60,7 +60,27 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
 Para verificar os testes funcionais e exploratorios, é necessario acessar o [Trello](https://trello.com/invite/b/WVkG8ZTQ/242476171929fbf8368129370fca7041/academy-trabalho-final-grupo-5-academy-airlines).
+	
+#### 🎲 Rodando o Backend.
 
+```bash
+
+# Clone este repositório
+$ git clone git@github.com:Joaopdev/Inventario-Raro.git
+
+# Vá para a pasta server
+$ cd server
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev
+
+# O servidor inciará na porta:3000 - acesse http://localhost:3000 
+
+```
+	
 ---
 
 ## 🛠 Tecnologias
