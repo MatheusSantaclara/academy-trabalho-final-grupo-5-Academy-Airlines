@@ -61,23 +61,21 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 Para verificar os testes funcionais e exploratorios, é necessario acessar o [Trello](https://trello.com/invite/b/WVkG8ZTQ/242476171929fbf8368129370fca7041/academy-trabalho-final-grupo-5-academy-airlines).
 	
-#### 🎲 Rodando o Backend.
+#### 🎲 Rodando o Cypress.
 
 ```bash
 
 # Clone este repositório
-$ git clone 
+$ git clone https://github.com/JuhMuntanelli/academy-trabalho-final-grupo-5-Academy-Airlines.git
 
-# Vá para a pasta server
-$ cd server
+# No VS Code, execute o comando abaixo através do terminal, para inicia a configuração do projeto
+$ npm init
 
-# Instale as dependências
-$ npm install
+# Utilize o comando ``npm install cypress`` para instalar o pacote do Cypress
+$ npm install cypress
 
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev
-
-# O servidor inciará na porta:3000 - acesse http://localhost:3000 
+# Para executar o ```Cypresse``` execute o comando abaixo em seu termina
+$ npx cypress open
 
 ```
 	
