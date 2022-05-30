@@ -33,6 +33,7 @@
 
  ##  Documentação
 O sistema ***Lembra Compras*** elaborado para realização desse projeto pode ser acessado através desse [link](https://academy-lembra-compras.herokuapp.com/login).
+
 A documentação da api pode ser encontrada no swagger neste [link](https://lista-compras-api.herokuapp.com/api-docs/).
 
 ---
@@ -74,7 +75,8 @@ $ npm init
 $ npm install cypress
 
 # Para executar o ```Cypress``` execute o comando abaixo em seu termina
-$ npx cypress open
+$ npm test
+$ npm npm run run
 
 ```
 
