@@ -1,3 +1,10 @@
 [
-
+    {
+        "auth": true,
+        "session": {
+            "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6ImEzYmM2OTA2LWZkMDYtNDQ1Yy1iMWM3LWIwMzQwZDgzNjc2ZiIsImlzX2FkbWluIjpmYWxzZSwiZW1haWwiOiJqdWhAZW1haS5jb20iLCJkYXRlQ3JlYXRlZCI6MTY1MzkzNjE1NTA2OCwiaXNzdWVkIjoxNjUzOTM2MTU1MDY4LCJleHBpcmVzIjoxNjUzOTM3MDU1MDY4fQ.pQPukxhckd11Zycyot6dtMFHFoeFocTa4D-Z6rLltBvtKE242w3bnKcOsAGhSWKroysWFQrBed4mljDayDguoQ",
+            "issued": 1653936155068,
+            "expires": 1653937055068
+        }
+    }
 ]
