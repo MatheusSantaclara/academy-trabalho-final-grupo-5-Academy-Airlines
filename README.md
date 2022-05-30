@@ -76,7 +76,7 @@ $ npm install cypress
 
 # Para executar o ```Cypress``` execute o comando abaixo em seu termina
 $ npm test
-$ npm npm run run
+$ npm run run
 
 ```
 
