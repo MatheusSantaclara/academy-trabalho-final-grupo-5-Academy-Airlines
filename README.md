@@ -72,7 +72,7 @@ $ git clone https://github.com/JuhMuntanelli/academy-trabalho-final-grupo-5-Acad
 $ npm init
 
 # Utilize o comando ``npm install cypress`` para instalar o pacote do Cypress
-$ npm install cypress
+$ npm install
 
 # Para executar o ```Cypress``` execute o comando abaixo em seu termina
 $ npm test
