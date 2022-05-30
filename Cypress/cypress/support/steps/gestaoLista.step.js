@@ -76,7 +76,7 @@ Then("visualizo a mensagem de erro de quantidade {string}", (mensagemErroQt) => 
 
 And("informo um item já adicionado", () => {
     gestaoPage.preencheItens("Arroz", 2);
-    gestaoPage.preencheItens("Arroz", 2);
+    gestaoPage.preencheItens("Arroz", 3);
     gestaoPage.clicaSalvar();
 });
 
@@ -84,7 +84,7 @@ Then("visualizo que a quantidade de itens é adicionada", () => {
     cy.wait(1000);
     cy.visit("https://academy-lembra-compras.herokuapp.com/lista");
     
-    cy.contains(4).should("be.visible");
+    cy.contains(5).should("be.visible");
 
 });
 
