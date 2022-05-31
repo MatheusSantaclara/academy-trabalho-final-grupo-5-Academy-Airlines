@@ -10,34 +10,33 @@ Feature: Login
         Given url baseUrl
         Given path "auth/login"
 
-    Scenario: Deve ser possivel realizar o login
+    Scenario: Login realizado com sucesso
         And form field email = payload.email
         And form field password = payload.password
         When method post
         Then status 200
         And match response == { auth: true, session: { token: "#string", issued: "#number", expires: "#number" } }
 
-    Scenario: Não deve ser possivel realizar o login sem senha
+    Scenario: Login sem senha
         And form field email = payload.email
         When method post
         Then status 400
         And match response == { "error": "Bad request." }
     
-    Scenario: Não deve ser possivel realizar o login sem email
+    Scenario: Login sem email
         And form field password = payload.password
         When method post
         Then status 400
         And match response == { "error": "Bad request." }
     
-    Scenario: Não deve ser possivel realizar o login com senha invalida
+    Scenario: Login com senha incorreta
         And form field email = payload.email
         And form field password = "senhaAcademyAirlines"
         When method post
         Then status 403
         And match response == { "error": "Invalid email or password." }
-        
     
-    Scenario: Não deve ser possivel realizar o login com email invalido
+    Scenario: Login com email inválido
         And form field email = "emailDoUsuario@AcademyAirlines.com"
         And form field password = payload.password
         When method post

@@ -33,11 +33,15 @@ Feature: hook
     Scenario: criar lista de compras
         * call read("hook.feature@login")
         * def payload = read("payloadUsuario.json")
-
+        * def nomeLista = "Supermarket"
+        * def nomeDoProduto = "Avocado"
+        * def quantidade = 1
+        * def payloadLista = read("payloadLista.json")
+        
         Given url baseUrl
         Given path "list"
         And header X-JWT-Token = payload.token
-        And request { description: "Supermarket", items: [{ name: "Avocado", amount: 1}]}
+        And request payloadLista
         When method post
         Then status 201
 
@@ -61,6 +65,6 @@ Feature: hook
         Given url baseUrl
         Given path "list"
         And header X-JWT-Token = payload.token
-        And request { description: "#(nomeLista)", items: [{ name: "#(nomeDoProduto)", amount: "#(quantidade)"}]}
+        And request payloadLista
         When method post
         Then status 201
