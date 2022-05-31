@@ -40,11 +40,11 @@ A documentação da api pode ser encontrada no swagger neste [link](https://list
 
 ## Funcionalidades
 
-- [x] Cadastrar um usuário são: ``nome``, ``e-mail`` e ``senha``.
-- [x] O Usuário faz ``login`` no sistema e se autentica.
-- [x] Atualizar as informações básicas para manter meus dados atualizados no sistema.
-- [x] Criar e gerenciar lista de compras.
-- [x] Consultar itens lista salvas.
+- [x] Cadastrar usuário com ``nome``, ``e-mail`` e ``senha``.
+- [x] O Usuário faz ``login`` no sistema para ter acesso as listas.
+- [x] Atualizar as informações de cadastro para manter os dados atualizados no sistema.
+- [x] Criar e gerenciar lista de compras, podendo concluir itens.
+- [x] Consultar histórico de lista finalizadas.
 
 ---
 
